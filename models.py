@@ -1,5 +1,6 @@
 from tortoise import Tortoise, Model, fields
 import uuid
+
 class User(Model):
     id = fields.IntField(pk=True)
     user_id = fields.IntField(unique=True)
